@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles.css";
 import BasicTable from "./Table";
 import Details from "./components/detailsComponent";
@@ -10,13 +10,15 @@ export default function App() {
       <div className="App">
         <div className="main_page_container" >
           <h2 style={{color: "white"}}>Sales Corp Scored Opportunities</h2>
-          <BrowserRouter>
+          {/* <BrowserRouter> */}
+          <HashRouter>
             <Routes>
               <Route path="/" element={<BasicTable />} />
               {/* <Route path="/chart" element={<Chart />} /> */}
               <Route path="/details/:id" element={<Details />} />
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
+          {/* </BrowserRouter> */}
           {/* <BasicTable/> */} 
         </div>
       </div>
