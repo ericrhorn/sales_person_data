@@ -1,0 +1,35 @@
+.App {
+/* font-family: "Verdana", sans-serif; */
+/* font-family: "Lucida Console", monospace; */
+ /* font-family: "Helvetica Neue", "Arial", sans-serif; */
+ /* font-family: Optima, sans-serif; */
+
+  text-align: center;
+    /* margin: 20px;
+    padding: 20px; */
+    height: 100vh;
+  }
+
+  .main_page_container {
+    /* margin: 20px; */
+    padding: 20px;
+  }
+  
+  .cardBox::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .cardBox {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* #background_image {
+    background-image: url(background_image);
+  }
+   */
+/* .table_container{
+  font-family: Optima, sans-serif;
+  background-color: red;
+
+}  */
