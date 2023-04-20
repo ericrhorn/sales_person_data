@@ -212,7 +212,9 @@ const DetailsCard = ({ detailsId }) => {
         <div className="square border shadow-sm p-2 mb-2 bg-body" >
           <Row style={{padding:"15px", margin: '15px'}}>
             <h3>Probability History</h3>
-            {item.probabilityHistory?.map((pHis, idx) => (
+            {item.probabilityHistory
+              ?.sort((a, b) => a.daysAgo - b.daysAgo)
+              .map((pHis, idx) => (
             <div key={idx} style={{padding: '25px', borderBottom: ' 1px solid grey'}}>
               <Row>
                 <p>
