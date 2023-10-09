@@ -157,7 +157,7 @@ export default function BasicTable() {
               style={{ borderBottom: "solid 1SC", backgroundColor: "black"}}
             >
               <Button
-                style={{ float: "left" }}
+                // style={{ float: "left" }}
                 onClick={handlePrevious}
                 size="sm"
                 variant="dark"
@@ -165,7 +165,7 @@ export default function BasicTable() {
                 Previous
               </Button>
               <Button
-                style={{ float: "left" }}
+                // style={{ float: "left" }}
                 onClick={handleNext}
                 size="sm"
                 variant="dark"
@@ -175,7 +175,7 @@ export default function BasicTable() {
               <Button
                 size="sm"
                 variant="dark"
-                style={{ float: "right" }}
+                // style={{ float: "right" }}
                 onClick={() => setShowDetails(false)}
               >
                 Exit
@@ -184,7 +184,6 @@ export default function BasicTable() {
             <div style={{padding: '15px'}}>
               <DetailsCard detailsId={detailsId} />
             </div>
-            
           </Card>
         </div>
       )}
